@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comics Bhandar — Hundreds of Hindi Comics for ₹249</title>
+  <meta name="description" content="Discover hundreds of Hindi comic PDFs in one library. A one-time ₹249 for superhero, horror, mythology, detective and kids' comics." />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2126046961326247');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2126046961326247&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Fonts: Bangers & Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bangers', 'cursive', 'sans-serif'],
+            sans: ['Nunito', 'sans-serif']
+          },
+          colors: {
+            'comic-ink': '#1c192b',
+            'comic-yellow': '#fde02f',
+            'comic-red': '#e6392a',
+            'comic-blue': '#2260e6',
+            'comic-paper': '#fbf8eb'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #1c192b;
+      background-color: #ffffff;
+    }
+    .comic-marquee-track {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      width: max-content;
+      animation: comic-marquee 48s linear infinite;
+    }
+    @keyframes comic-marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .comic-shadow {
+      box-shadow: 4px 4px 0 #1c192b;
+    }
+    .comic-shadow-sm {
+      box-shadow: 3px 3px 0 #1c192b;
+    }
+    .comic-btn-pop:hover {
+      transform: translateY(-2px);
+    }
+    .comic-btn-pop:active {
+      transform: translate(2px, 2px);
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body class="selection:bg-comic-yellow selection:text-comic-ink pb-20">
+
+  <!-- Top Navbar -->
+  <header class="sticky top-0 z-40 flex items-center justify-between gap-3 border-b-2 border-comic-ink bg-white/95 px-4 py-3 backdrop-blur sm:px-8 lg:px-12">
+    <a href="#top" class="flex min-w-0 items-center gap-2 font-extrabold text-comic-ink">
+      <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg border-2 border-comic-ink bg-comic-yellow font-display text-2xl comic-shadow-sm">CB</span>
+      <span class="truncate text-sm sm:text-base font-black">Comics Bhandar <span class="font-semibold text-gray-500">· 99digitals</span></span>
+    </a>
+    <div class="flex items-center gap-4">
+      <a href="#library" class="hidden text-sm font-black transition-colors hover:text-comic-red sm:inline-flex">Browse comics</a>
+      <a href="#checkout" class="comic-btn-pop inline-flex items-center rounded-md border-2 border-comic-ink bg-comic-red px-4 py-2 text-xs sm:text-sm font-black text-white comic-shadow transition-transform">
+        Get library · ₹249
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="top" class="relative isolate min-h-[680px] overflow-hidden border-b-2 border-comic-ink bg-comic-paper md:min-h-[760px]">
+    <!-- Animated Marquee Background -->
+    <div class="absolute inset-x-0 top-0 h-[56%] overflow-hidden opacity-90 pointer-events-none" aria-hidden="true">
+      <div class="comic-marquee-track py-2">
+        <!-- Row 1 -->
+        <div class="flex gap-3">
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/b2132892-fec5-4355-a273-de955c520f53/comic-agniveer.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/3a31579d-a82b-4216-ab3d-c638331b5823/comic-haveli.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/ccc90814-ecc8-41da-8af0-cabf4e6222e3/comic-raambaan.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/58b54fe4-724f-4dfe-b750-7dcfc1faeade/comic-vikram.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/a2865a59-cb77-4e11-b8bc-669e19149df1/comic-grandpa.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/b2132892-fec5-4355-a273-de955c520f53/comic-agniveer.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/3a31579d-a82b-4216-ab3d-c638331b5823/comic-haveli.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/ccc90814-ecc8-41da-8af0-cabf4e6222e3/comic-raambaan.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/58b54fe4-724f-4dfe-b750-7dcfc1faeade/comic-vikram.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/a2865a59-cb77-4e11-b8bc-669e19149df1/comic-grandpa.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+        </div>
+        <!-- Row 2 -->
+        <div class="flex gap-3 translate-x-12">
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/ccc90814-ecc8-41da-8af0-cabf4e6222e3/comic-raambaan.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/58b54fe4-724f-4dfe-b750-7dcfc1faeade/comic-vikram.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/b2132892-fec5-4355-a273-de955c520f53/comic-agniveer.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/a2865a59-cb77-4e11-b8bc-669e19149df1/comic-grandpa.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/3a31579d-a82b-4216-ab3d-c638331b5823/comic-haveli.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/ccc90814-ecc8-41da-8af0-cabf4e6222e3/comic-raambaan.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/58b54fe4-724f-4dfe-b750-7dcfc1faeade/comic-vikram.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/b2132892-fec5-4355-a273-de955c520f53/comic-agniveer.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/a2865a59-cb77-4e11-b8bc-669e19149df1/comic-grandpa.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+          <img src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/3a31579d-a82b-4216-ab3d-c638331b5823/comic-haveli.jpg" class="h-44 w-32 rounded-lg border-2 border-comic-ink object-cover" alt="" />
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-white/60 to-comic-paper"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative mx-auto flex max-w-6xl flex-col items-center px-4 pb-16 pt-16 text-center sm:px-8 sm:pt-20">
+      <div class="mb-3 inline-flex rotate-[-2deg] items-center gap-2 rounded bg-comic-yellow px-4 py-2 text-sm font-black border-2 border-comic-ink comic-shadow-sm">
+        ✨ Comics Bhandar · 99digitals
+      </div>
+      <p class="mb-6 text-sm font-black text-gray-600 sm:text-base">The most requested comics — all included</p>
+
+      <!-- 5 Featured Covers -->
+      <div class="mb-9 grid w-full max-w-[680px] grid-cols-5 gap-2 sm:gap-4">
+        <figure class="min-w-0">
+          <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow-sm" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/b2132892-fec5-4355-a273-de955c520f53/comic-agniveer.jpg" alt="Agniveer" />
+          <figcaption class="mt-2 text-xs font-black leading-tight sm:text-sm">Agniveer</figcaption>
+        </figure>
+        <figure class="min-w-0">
+          <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow-sm" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/3a31579d-a82b-4216-ab3d-c638331b5823/comic-haveli.jpg" alt="Haveli" />
+          <figcaption class="mt-2 text-xs font-black leading-tight sm:text-sm">Haveli</figcaption>
+        </figure>
+        <figure class="min-w-0">
+          <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow-sm" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/ccc90814-ecc8-41da-8af0-cabf4e6222e3/comic-raambaan.jpg" alt="Raambaan" />
+          <figcaption class="mt-2 text-xs font-black leading-tight sm:text-sm">Raambaan</figcaption>
+        </figure>
+        <figure class="min-w-0">
+          <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow-sm" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/58b54fe4-724f-4dfe-b750-7dcfc1faeade/comic-vikram.jpg" alt="Detective Vikram" />
+          <figcaption class="mt-2 text-xs font-black leading-tight sm:text-sm">Vikram</figcaption>
+        </figure>
+        <figure class="min-w-0">
+          <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow-sm" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/a2865a59-cb77-4e11-b8bc-669e19149df1/comic-grandpa.jpg" alt="Grandpa" />
+          <figcaption class="mt-2 text-xs font-black leading-tight sm:text-sm">Grandpa</figcaption>
+        </figure>
+      </div>
+
+      <h1 class="max-w-5xl font-display text-5xl uppercase leading-[0.98] sm:text-7xl lg:text-8xl">
+        All of these, and more…
+        <span class="mt-2 block text-comic-red">Hundreds of Hindi comics</span>
+        <span class="mt-1 block">just ₹249</span>
+      </h1>
+      <p class="mt-5 max-w-lg text-base font-bold text-gray-600 sm:text-lg">All as PDFs, in one library — on your phone.</p>
+
+      <a href="#checkout" class="comic-btn-pop mt-7 inline-flex items-center gap-2 rounded-md border-2 border-comic-ink bg-comic-red px-8 py-4 font-black text-white text-lg sm:text-xl comic-shadow transition-transform">
+        Get the full library for ₹249 →
+      </a>
+
+      <div class="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-black text-gray-600 sm:text-sm">
+        <span>⚡ Instant download</span>
+        <span>✓ One-time ₹249</span>
+        <span>🛡️ Refund if not received</span>
+      </div>
+
+      <a href="#library" class="mt-9 inline-flex items-center gap-2 text-sm font-black text-comic-ink/80 hover:text-comic-red">
+        Explore the shelves ↓
+      </a>
+    </div>
+  </section>
+
+  <!-- Library Shelves Section -->
+  <section id="library" class="mx-auto max-w-7xl px-4 py-14 sm:px-8 sm:py-20">
+    <div class="flex flex-col gap-5 border-b-2 border-comic-ink pb-6 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <p class="mb-2 text-xs font-black uppercase text-comic-red">Pick your next adventure</p>
+        <h2 class="font-display text-4xl uppercase sm:text-6xl">Hundreds of comics. <span class="text-comic-blue">One library.</span></h2>
+        <p class="mt-2 font-bold text-gray-600">Every shelf can also be downloaded as one ZIP.</p>
+      </div>
+      <span class="shrink-0 rounded-md border-2 border-comic-ink bg-comic-yellow px-4 py-2 text-sm font-black comic-shadow-sm">
+        ₹249 · one time
+      </span>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="-mx-4 flex gap-2 overflow-x-auto px-4 py-6 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0" id="category-filters">
+      <button class="filter-btn active shrink-0 rounded-full border-2 border-comic-ink bg-comic-yellow px-5 py-2 text-sm font-black text-comic-ink comic-shadow-sm transition" data-category="All shelves">All shelves</button>
+      <button class="filter-btn shrink-0 rounded-full border-2 border-comic-ink bg-white px-5 py-2 text-sm font-black text-comic-ink hover:bg-comic-paper transition" data-category="Superhero">Superhero</button>
+      <button class="filter-btn shrink-0 rounded-full border-2 border-comic-ink bg-white px-5 py-2 text-sm font-black text-comic-ink hover:bg-comic-paper transition" data-category="Horror">Horror</button>
+      <button class="filter-btn shrink-0 rounded-full border-2 border-comic-ink bg-white px-5 py-2 text-sm font-black text-comic-ink hover:bg-comic-paper transition" data-category="Mythology">Mythology</button>
+      <button class="filter-btn shrink-0 rounded-full border-2 border-comic-ink bg-white px-5 py-2 text-sm font-black text-comic-ink hover:bg-comic-paper transition" data-category="Detective">Detective</button>
+      <button class="filter-btn shrink-0 rounded-full border-2 border-comic-ink bg-white px-5 py-2 text-sm font-black text-comic-ink hover:bg-comic-paper transition" data-category="Kids">Kids</button>
+    </div>
+
+    <!-- Comic Cards Grid -->
+    <div class="grid grid-cols-2 gap-x-4 gap-y-7 sm:grid-cols-3 sm:gap-6 lg:grid-cols-5" id="comic-grid">
+      <!-- 1 -->
+      <article class="comic-card group" data-category="Superhero">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/b2132892-fec5-4355-a273-de955c520f53/comic-agniveer.jpg" alt="Agniveer" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">Agniveer and the City of Fire</p><p class="mt-1 text-xs font-bold text-gray-500">Superhero</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 2 -->
+      <article class="comic-card group" data-category="Horror">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/3a31579d-a82b-4216-ab3d-c638331b5823/comic-haveli.jpg" alt="The Witch of the Haveli" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">The Witch of the Haveli</p><p class="mt-1 text-xs font-bold text-gray-500">Horror</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 3 -->
+      <article class="comic-card group" data-category="Mythology">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/ccc90814-ecc8-41da-8af0-cabf4e6222e3/comic-raambaan.jpg" alt="Raambaan" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">Raambaan — Demon Slayer</p><p class="mt-1 text-xs font-bold text-gray-500">Mythology</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 4 -->
+      <article class="comic-card group" data-category="Detective">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/58b54fe4-724f-4dfe-b750-7dcfc1faeade/comic-vikram.jpg" alt="Detective Vikram" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">Detective Vikram — Rainy Night</p><p class="mt-1 text-xs font-bold text-gray-500">Detective</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 5 -->
+      <article class="comic-card group" data-category="Kids">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/a2865a59-cb77-4e11-b8bc-669e19149df1/comic-grandpa.jpg" alt="Grandpa's Clever Tricks" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">Grandpa's Clever Tricks</p><p class="mt-1 text-xs font-bold text-gray-500">Kids</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 6 -->
+      <article class="comic-card group" data-category="Superhero">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/b2132892-fec5-4355-a273-de955c520f53/comic-agniveer.jpg" alt="Agniveer" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">Agniveer — The Dark Shadow</p><p class="mt-1 text-xs font-bold text-gray-500">Superhero</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 7 -->
+      <article class="comic-card group" data-category="Horror">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/3a31579d-a82b-4216-ab3d-c638331b5823/comic-haveli.jpg" alt="Secret of the Cremation Ground" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">Secret of the Cremation Ground</p><p class="mt-1 text-xs font-bold text-gray-500">Horror</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 8 -->
+      <article class="comic-card group" data-category="Mythology">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/ccc90814-ecc8-41da-8af0-cabf4e6222e3/comic-raambaan.jpg" alt="Mighty Hanuman" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">Mighty Hanuman</p><p class="mt-1 text-xs font-bold text-gray-500">Mythology</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 9 -->
+      <article class="comic-card group" data-category="Detective">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/58b54fe4-724f-4dfe-b750-7dcfc1faeade/comic-vikram.jpg" alt="Murder at the Gateway" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">Murder at the Gateway</p><p class="mt-1 text-xs font-bold text-gray-500">Detective</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+      <!-- 10 -->
+      <article class="comic-card group" data-category="Kids">
+        <img class="aspect-[3/4] w-full rounded-lg border-2 border-comic-ink bg-white object-cover comic-shadow transition-transform duration-200 group-hover:-translate-y-1" src="https://rang-birangi-kahaniyan.lovable.app/__l5e/assets-v1/a2865a59-cb77-4e11-b8bc-669e19149df1/comic-grandpa.jpg" alt="The Parrot and the Mango Tree" />
+        <div class="mt-3 flex items-start justify-between gap-2">
+          <div><p class="font-extrabold leading-snug">The Parrot and the Mango Tree</p><p class="mt-1 text-xs font-bold text-gray-500">Kids</p></div>
+          <span class="text-comic-blue font-bold">📥</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-12 flex flex-col items-center gap-4 border-y-2 border-comic-ink py-8 text-center">
+      <p class="font-display text-3xl uppercase sm:text-4xl">…and many more comics, all in one library</p>
+      <a href="#checkout" class="comic-btn-pop inline-flex items-center gap-2 rounded-md border-2 border-comic-ink bg-comic-red px-7 py-3.5 text-base sm:text-lg font-black text-white comic-shadow transition-transform">
+        Get the full library · ₹249 →
+      </a>
+    </div>
+  </section>
+
+  <!-- Price Comparison Section -->
+  <section class="border-y-2 border-comic-ink bg-comic-yellow/60">
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-8 sm:py-16 md:grid-cols-[1fr_auto_1fr] md:items-center">
+      <div class="text-center md:text-left">
+        <p class="text-xs font-black uppercase tracking-wider">Simple math</p>
+        <h2 class="mt-2 font-display text-3xl uppercase sm:text-4xl">Buying printed comics separately</h2>
+        <p class="mt-3 font-display text-5xl text-comic-red sm:text-6xl">₹25,000+</p>
+        <p class="mt-1 text-sm font-semibold text-gray-600">Estimated, based on typical online prices of printed issues</p>
+      </div>
+      <div class="mx-auto grid h-14 w-14 place-items-center rounded-full border-2 border-comic-ink bg-white font-display text-2xl comic-shadow-sm">
+        VS
+      </div>
+      <div class="text-center md:text-right">
+        <p class="text-xs font-black uppercase tracking-wider">The full library here</p>
+        <h2 class="mt-2 font-display text-3xl uppercase sm:text-4xl">Hundreds of Hindi comics</h2>
+        <p class="mt-3 font-display text-6xl text-comic-blue sm:text-7xl">₹249</p>
+        <p class="mt-1 text-sm font-black">Just once. Link forever.</p>
+        <a href="#checkout" class="comic-btn-pop mt-5 inline-flex items-center gap-2 rounded-md border-2 border-comic-ink bg-comic-red px-6 py-3 font-black text-white comic-shadow transition-transform">
+          Get the full library →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 Steps Section -->
+  <section class="mx-auto max-w-6xl px-4 py-14 sm:px-8 sm:py-20">
+    <div class="mb-10 text-center">
+      <p class="text-xs font-black uppercase text-comic-red tracking-wider">Your next read is close</p>
+      <h2 class="mt-2 font-display text-4xl uppercase sm:text-6xl">Three steps to story time</h2>
+    </div>
+    <div class="grid gap-8 md:grid-cols-3">
+      <article class="relative border-t-2 border-comic-ink pt-6">
+        <div class="flex items-center justify-between">
+          <span class="font-display text-5xl text-comic-red">01</span>
+          <span class="grid h-12 w-12 place-items-center rounded-lg border-2 border-comic-ink bg-comic-yellow text-xl comic-shadow-sm">🛡️</span>
+        </div>
+        <h3 class="mt-4 font-display text-3xl uppercase">Pay ₹249</h3>
+        <p class="mt-2 max-w-sm font-semibold leading-relaxed text-gray-600">Via UPI, card or net banking. Secure payment options at checkout.</p>
+      </article>
+
+      <article class="relative border-t-2 border-comic-ink pt-6">
+        <div class="flex items-center justify-between">
+          <span class="font-display text-5xl text-comic-red">02</span>
+          <span class="grid h-12 w-12 place-items-center rounded-lg border-2 border-comic-ink bg-comic-yellow text-xl comic-shadow-sm">🔗</span>
+        </div>
+        <h3 class="mt-4 font-display text-3xl uppercase">Get your library link</h3>
+        <p class="mt-2 max-w-sm font-semibold leading-relaxed text-gray-600">Your link appears on screen and is sent by email after payment.</p>
+      </article>
+
+      <article class="relative border-t-2 border-comic-ink pt-6">
+        <div class="flex items-center justify-between">
+          <span class="font-display text-5xl text-comic-red">03</span>
+          <span class="grid h-12 w-12 place-items-center rounded-lg border-2 border-comic-ink bg-comic-yellow text-xl comic-shadow-sm">📥</span>
+        </div>
+        <h3 class="mt-4 font-display text-3xl uppercase">Download and read</h3>
+        <p class="mt-2 max-w-sm font-semibold leading-relaxed text-gray-600">Save a whole shelf as a ZIP or choose individual PDFs. Read offline too.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="mx-auto max-w-4xl px-4 pb-14 sm:px-8 sm:pb-20">
+    <div class="mb-8 text-center">
+      <p class="text-xs font-black uppercase text-comic-red tracking-wider">The fine print</p>
+      <h2 class="mt-2 font-display text-4xl uppercase sm:text-5xl">Frequently asked questions</h2>
+    </div>
+    <div class="divide-y-2 divide-comic-ink border-y-2 border-comic-ink" id="faq-list">
+      <!-- Item 1 -->
+      <div class="faq-item">
+        <button class="faq-toggle flex w-full items-center justify-between gap-4 py-5 text-left font-black text-lg">
+          <span>Is ₹249 a one-time payment?</span>
+          <span class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-comic-ink bg-comic-yellow text-sm font-black">−</span>
+        </button>
+        <p class="faq-content pb-5 pr-10 font-semibold leading-relaxed text-gray-600">
+          Yes. The library is offered for a single payment of ₹249, with no monthly subscription.
+        </p>
+      </div>
+      <!-- Item 2 -->
+      <div class="faq-item">
+        <button class="faq-toggle flex w-full items-center justify-between gap-4 py-5 text-left font-black text-lg">
+          <span>How do I get the comics?</span>
+          <span class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-comic-ink bg-comic-yellow text-sm font-black">+</span>
+        </button>
+        <p class="faq-content hidden pb-5 pr-10 font-semibold leading-relaxed text-gray-600">
+          The collection is designed for digital reading, with individual comics and complete shelves available as PDFs.
+        </p>
+      </div>
+      <!-- Item 3 -->
+      <div class="faq-item">
+        <button class="faq-toggle flex w-full items-center justify-between gap-4 py-5 text-left font-black text-lg">
+          <span>Can I read them on my phone?</span>
+          <span class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-comic-ink bg-comic-yellow text-sm font-black">+</span>
+        </button>
+        <p class="faq-content hidden pb-5 pr-10 font-semibold leading-relaxed text-gray-600">
+          Yes. PDF comics can be opened on phones, tablets and computers, including offline after download.
+        </p>
+      </div>
+      <!-- Item 4 -->
+      <div class="faq-item">
+        <button class="faq-toggle flex w-full items-center justify-between gap-4 py-5 text-left font-black text-lg">
+          <span>What if I don't receive the library?</span>
+          <span class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-comic-ink bg-comic-yellow text-sm font-black">+</span>
+        </button>
+        <p class="faq-content hidden pb-5 pr-10 font-semibold leading-relaxed text-gray-600">
+          The offer includes a refund if the library is not received.
+        </p>
+      </div>
+      <!-- Item 5 -->
+      <div class="faq-item">
+        <button class="faq-toggle flex w-full items-center justify-between gap-4 py-5 text-left font-black text-lg">
+          <span>What kinds of comics are included?</span>
+          <span class="faq-icon grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-comic-ink bg-comic-yellow text-sm font-black">+</span>
+        </button>
+        <p class="faq-content hidden pb-5 pr-10 font-semibold leading-relaxed text-gray-600">
+          Browse superhero, horror, mythology, detective and kids' stories.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Call To Action -->
+  <section id="checkout" class="border-y-2 border-comic-ink bg-comic-paper px-4 py-14 text-center sm:py-20">
+    <p class="inline-flex items-center gap-2 rounded bg-comic-yellow px-3 py-1 text-xs font-black uppercase border border-comic-ink">
+      ✨ Comics Bhandar · 99digitals
+    </p>
+    <h2 class="mx-auto mt-5 max-w-4xl font-display text-5xl uppercase leading-none sm:text-7xl">
+      Hundreds of stories. <span class="text-comic-red">One library.</span>
+    </h2>
+    <p class="mt-4 text-base font-black text-gray-600">Superhero · Horror · Mythology · Detective · Kids</p>
+    <p class="mt-7 font-display text-6xl text-comic-blue sm:text-7xl">₹249</p>
+    <p class="mt-1 font-black">One-time payment · Read on your phone</p>
+    <a href="#checkout" class="comic-btn-pop mt-6 inline-flex items-center gap-2 rounded-md border-2 border-comic-ink bg-comic-red px-8 py-4 text-lg font-black text-white comic-shadow transition-transform">
+      Get the full library for ₹249 →
+    </a>
+    <p class="mx-auto mt-4 max-w-lg text-xs font-bold text-gray-500">
+      Instant download · One-time ₹249 · Refund if you don't receive the library
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs font-bold text-gray-500 sm:flex-row sm:px-8">
+    <span>© 99digitals · Comics Bhandar</span>
+    <nav class="flex items-center gap-4">
+      <a href="#top" class="hover:text-comic-red font-black">Back to top ↑</a>
+    </nav>
+  </footer>
+
+  <!-- Sticky Bottom Purchase Bar -->
+  <div class="fixed inset-x-0 bottom-0 z-40 flex min-h-16 items-center justify-between gap-3 border-t-2 border-comic-ink bg-white/95 px-4 py-2 shadow-lg backdrop-blur sm:px-8">
+    <p class="text-sm font-black">
+      <span class="text-base text-comic-red">₹249</span> full library <span class="hidden sm:inline font-bold text-gray-600">· one-time</span>
+    </p>
+    <a href="#checkout" class="comic-btn-pop inline-flex items-center gap-1 rounded-md border-2 border-comic-ink bg-comic-red px-4 py-2 text-sm font-black text-white comic-shadow transition-transform">
+      Get library →
+    </a>
+  </div>
+
+  <!-- Interactive Logic -->
+  <script>
+    // Category Filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const comicCards = document.querySelectorAll('.comic-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-comic-yellow', 'comic-shadow-sm');
+          b.classList.add('bg-white');
+        });
+        btn.classList.add('bg-comic-yellow', 'comic-shadow-sm');
+        btn.classList.remove('bg-white');
+
+        const category = btn.getAttribute('data-category');
+        comicCards.forEach(card => {
+          if (category === 'All shelves' || card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const toggle = item.querySelector('.faq-toggle');
+      const content = item.querySelector('.faq-content');
+      const icon = item.querySelector('.faq-icon');
+
+      toggle.addEventListener('click', () => {
+        const isHidden = content.classList.contains('hidden');
+        // close all
+        faqItems.forEach(other => {
+          other.querySelector('.faq-content').classList.add('hidden');
+          other.querySelector('.faq-icon').textContent = '+';
+        });
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.textContent = '−';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
